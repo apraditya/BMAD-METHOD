@@ -1,0 +1,42 @@
+name: "Bullet Train Convention Checklist"
+description: "Verify that code follows Bullet Train framework conventions"
+items:
+  - name: "Team Scoping"
+    description: "All models that store user data are scoped to teams"
+    completed: false
+
+  - name: "UUID Primary Keys"
+    description: "All models use UUID primary keys instead of integers"
+    completed: false
+
+  - name: "Scoped Validations"
+    description: "All uniqueness validations include scope: :team_id"
+    completed: false
+
+  - name: "Team Membership"
+    description: "Users access resources through TeamMembership associations"
+    completed: false
+
+  - name: "RESTful Routing"
+    description: "All routes follow Rails REST conventions and are team-scoped"
+    completed: false
+
+  - name: "Controller Structure"
+    description: "Controllers are organized in appropriate namespaces (account, api, public)"
+    completed: false
+
+  - name: "Super Scaffolding"
+    description: "Used Super Scaffolding for generating standard CRUD operations"
+    completed: false
+
+  - name: "Security Review"
+    description: "Verified no cross-team data access vulnerabilities"
+    completed: false
+
+  - name: "Multi-Tenancy Filtering"
+    description: "Queries automatically filter by current_team context"
+    completed: false
+
+  - name: "Personal Teams"
+    description: "Each user has a personal team created automatically"
+    completed: false

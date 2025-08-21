@@ -1,0 +1,42 @@
+name: "Implement Bullet Train Feature"
+description: "Implement a new feature following Bullet Train conventions"
+steps:
+  - name: "Understand Requirements"
+    description: "Review the feature requirements and identify the models needed"
+    action: "Discuss with the user to understand the feature requirements"
+    done: false
+
+  - name: "Plan Team-Scoped Models"
+    description: "Plan the team-scoped models needed for the feature"
+    action: "Create a plan for models that will be scoped to teams with UUID primary keys"
+    done: false
+
+  - name: "Use Super Scaffolding"
+    description: "Generate the models, controllers, and views using Bullet Train's Super Scaffolding"
+    action: "Execute the Super Scaffolding commands to generate the necessary code"
+    done: false
+
+  - name: "Implement Business Logic"
+    description: "Add any custom business logic in models or service objects"
+    action: "Implement the business logic following Bullet Train's patterns"
+    done: false
+
+  - name: "Add Team Scoping"
+    description: "Ensure all models are properly scoped to teams"
+    action: "Verify that all models include team_id and validations use scope: :team_id"
+    done: false
+
+  - name: "Test Multi-Tenancy"
+    description: "Test that data is properly isolated between teams"
+    action: "Verify that users can only access data from their teams"
+    done: false
+
+  - name: "Review Security"
+    description: "Review the implementation for security best practices"
+    action: "Check that there are no cross-team data access vulnerabilities"
+    done: false
+
+  - name: "Document Implementation"
+    description: "Document any custom code or deviations from Bullet Train patterns"
+    action: "Add comments to the code and update any relevant documentation"
+    done: false
