@@ -84,3 +84,60 @@ class Account::{model_name.pluralize.classify}Controller < Account::ApplicationC
   # Add any custom actions here
 end
 ```
+
+## Avo Resource Template
+
+For models that need admin panel management, create an Avo resource:
+
+```ruby
+# app/avo/resources/{model_name}.rb
+class Avo::Resources::{model_name.classify} < Avo::BaseResource
+  self.title = :name # or another appropriate field for display
+  self.includes = []
+  # self.search = {
+  #   query: -> { query.ransack(id_eq: params[:q], name_cont: params[:q], m: "or").result(distinct: false) },
+  #   item: -> {
+  #     {
+  #       title: record.name
+  #     }
+  #   }
+  # }
+
+  def fields
+    field :id, as: :id
+    field :name, as: :text
+    field :team, as: :belongs_to
+    # Add other fields as needed
+  end
+end
+```
+
+## Avo Features Overview
+
+Avo provides several features for admin panel management:
+
+### Standard Features (Available in all Avo versions):
+- Resource management with CRUD operations
+- Field types (text, number, boolean, date, etc.)
+- Associations (belongs_to, has_many, has_one)
+- Search functionality
+- Filters and actions
+- Custom tools and dashboards
+
+### Avo Pro Features:
+- Advanced fields (trix, markdown, file, image, etc.)
+- Customizable views (table, grid, etc.)
+- Advanced filters and actions
+- Custom tools and pages
+- API integration
+- Custom fields
+
+### Avo Advanced Features:
+- Role-based access control
+- Multi-tenancy support
+- Advanced authorization
+- Custom authentication
+- Advanced reporting and analytics
+- Custom workflows
+
+Note: Some features may only be available in Avo Pro or Advanced editions. Check the Avo documentation for specific feature availability.

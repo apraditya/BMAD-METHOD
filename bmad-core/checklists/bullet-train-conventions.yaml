@@ -40,3 +40,11 @@ items:
   - name: "Personal Teams"
     description: "Each user has a personal team created automatically"
     completed: false
+
+  - name: "Avo Resource"
+    description: "Created Avo resource for admin panel management of the model"
+    completed: false
+
+  - name: "Avo Fields"
+    description: "Configured appropriate fields in Avo resource for admin management"
+    completed: false

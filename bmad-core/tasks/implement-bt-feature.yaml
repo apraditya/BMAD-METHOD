@@ -36,6 +36,16 @@ steps:
     action: "Check that there are no cross-team data access vulnerabilities"
     done: false
 
+  - name: "Create Avo Resources"
+    description: "Create Avo resources for admin panel management of the models"
+    action: "Generate Avo resources for system administrators to manage the data"
+    done: false
+
+  - name: "Configure Avo Fields"
+    description: "Configure appropriate fields in Avo resources for effective admin management"
+    action: "Set up fields, associations, and customizations in Avo resources"
+    done: false
+
   - name: "Document Implementation"
     description: "Document any custom code or deviations from Bullet Train patterns"
     action: "Add comments to the code and update any relevant documentation"
